@@ -1,0 +1,39 @@
+.btn {
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    user-select: none;
+    padding: 0 2rem;
+    height:5rem;
+    line-height: 4rem;
+    border-radius: 10rem;
+    border: none;
+    background-image: $gradient-primary;
+    color: var(--color-text);
+    transition: all 0.25s;
+    align-items: center;
+
+    &:hover {
+        color: var(--white);
+        text-decoration: none;
+        opacity: 0.85;
+        background-position: right center;
+    }
+
+    &--black {
+        background-color: var(--color-primary);
+        background-image: none;
+    }
+
+    &--fluid {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        @include respond(phone-small) {
+            width: 95%;
+        }
+    }
+}

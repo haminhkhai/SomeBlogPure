@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Some Blog</title>
+    </head>
+    <body>
+        <header id="header" class="header">
+            <div class="container">
+                <div class="header-two-column flex">
+                    <div class="header-column-left flex">
+                        <a href="index.html">
+                            <img src="img/logo-light.svg" alt="logo" class="logo" />
+                          </a>
+                        <nav class="nav-wrap nav-wrap--left-side flex">
+                            <ul class="nav">
+                                <li class="nav__item">
+                                    <a href="tags.html" class="nav__link">Tags</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="authors.html" class="nav__link">Authors</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="contact.html" class="nav__link">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-column-right flex">
+                        <nav class="nav-wrap flex">
+                            <ul class="nav nav--right-side">
+                                <li class="nav__item">
+                                    <svg id="searchBtn" class="nav__icon">
+                                        <use href="img/sprite.svg#icon-search"></use>
+                                    </svg>
+                                </li>
+                                <li class="nav__item">
+                                    <svg
+                                        onclick="toggleTheme('toggle')"
+                                        id="toggle_theme_btn"
+                                        class="nav__icon">
+                                        <use href=""></use>
+                                    </svg>
+                                </li>
+                                <li class="nav__item nav__sign-in">
+                                    <a href="#" class="nav__link">Sign in</a>
+                                </li>
+                                <li class="nav__item nav__subcribe">
+                                    <button class="btn">Become a member</button>
+                                </li>
+                                <li class="nav__item nav__sub-menu">
+                                    <input type="checkbox" class="nav__checkbox" id="nav-toggle" />
+                                    <label for="nav-toggle" class="nav__button prevent-select">
+                                        <span class="nav__toggle-icon">&nbsp;</span>
+                                    </label>
+                                    <div class="nav__sub-menu-background">
+                                        <nav class="sub-menu">
+                                            <ul class="sub-menu__nav prevent-select">
+                                                <li class="sub-menu__item">
+                                                    <a href="tags.html" class="sub-menu__link">Tags</a>
+                                                </li>
+                                                <li class="sub-menu__item">
+                                                    <a href="#" class="sub-menu__link">Author</a>
+                                                </li>
+                                                <li class="sub-menu__item">
+                                                    <a href="#" class="sub-menu__link">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <nav class="sub-menu flex">
+                                            <ul
+                                                class="sub-menu__nav sub-menu__nav--center flex prevent-select">
+                                                <li class="sub-menu__item">
+                                                    <a href="#" class="sub-menu__link">Sign in</a>
+                                                </li>
+                                                <li class="sub-menu__item">
+                                                    <button class="btn">Become a member</button>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-post">
+                <div class="container">
+                    <article class="post flex">
+                        <div class="post__header flex">
+                            <div class="post__tag-list flex">
+                                <a class="post-tag post-tag--travel" href="tag.html">Travel</a>
+                            </div>
+                            <h1 class="post-title">
+                                Never let your memories be greater than your dreams
+                            </h1>
+                            <div class="post-excerpt">
+                                Before long the searchlight discovered some distance away a schooner
+                                with all sails set, apparently the same vessel which had been
+                                noticed earlier in the evening. The wind had by this time backed to
+                                the east, and there was a shudder amongst the watchers on
+                            </div>
+                            <div class="post__meta flex">
+                                <div class="meta-authors flex">
+                                    <a class="meta-authors__img-wrapper">
+                                        <img
+                                            src="img/user-2.jpg"
+                                            alt="Friend 1"
+                                            class="meta-authors__img" />
+                                    </a>
+                                    <a class="meta-authors__img-wrapper">
+                                        <img
+                                            src="img/user-4.jpg"
+                                            alt="Friend 2"
+                                            class="meta-authors__img" />
+                                    </a>
+                                    <span class="meta-authors__name"
+                                        >Apurba Talukdar & Ishan Sharma</span
+                                    >
+                                </div>
+                                <div class="meta-time flex">
+                                    <div class="meta-time__wrapper flex">
+                                        <svg class="meta-time__icon">
+                                            <use href="img/sprite.svg#icon-calendar"></use>
+                                        </svg>
+                                        <span>Dec 21, 2022</span>
+                                    </div>
+                                    <div class="meta-time__wrapper flex">
+                                        <svg class="meta-time__icon">
+                                            <use href="img/sprite.svg#icon-clock"></use>
+                                        </svg>
+                                        <span>3 min read</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="post__img-wrapper">
+                            <img src="img/article1.webp" alt="single article" class="post__img" />
+                            <figcaption>
+                                Photo by
+                                <a
+                                    href="https://unsplash.com/@averieclaire?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">
+                                    Averie Woodard
+                                </a>
+                                /
+                                <a
+                                    href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">
+                                    Unsplash
+                                </a>
+                            </figcaption>
+                        </figure>
+
+                        <div class="post__content">
+                            <p>
+                                Before long the searchlight discovered some distance away a schooner
+                                with all sails set, apparently the same vessel which had been
+                                noticed earlier in the evening. The wind had by this time backed to
+                                the east, and there was a shudder amongst the watchers on the cliff
+                                as they realized the terrible danger in which she now was. Between
+                                her and the port lay the great flat reef on which so many good ships
+                                have from time to time suffered, and, with the wind blowing from its
+                                present quarter, it would be quite impossible that she should fetch
+                                the entrance of the harbour.
+                            </p>
+
+                            <h3>Wherever you go, go with all your heart</h3>
+
+                            <p>
+                                It was now nearly the hour of high tide, but the waves were so great
+                                that in their troughs the shallows of the shore were almost visible,
+                                and the schooner, with all sails set, was rushing with such speed
+                                that, in the words of one old salt, "she must fetch up somewhere, if
+                                it was only in hell.
+                            </p>
+
+                            <figure class="post__img-wrapper post__img-wrapper--fit">
+                                <img src="img/article1-fit.jpg" alt="article1" />
+                                <figcaption>
+                                    Photo by
+                                    <a
+                                        href="https://unsplash.com/@averieclaire?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">
+                                        Jakob Owens
+                                    </a>
+                                    /
+                                    <a
+                                        href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">
+                                        Unsplash
+                                    </a>
+                                </figcaption>
+                            </figure>
+
+                            <p>
+                                Then came another rush of sea-fog, greater than any hitherto--a mass
+                                of dank mist, which seemed to close on all things like a grey pall,
+                                and left available to men only the organ of hearing, for the roar of
+                                the tempest, and the crash of the thunder, and the booming of the
+                                mighty billows came through the damp oblivion even louder than
+                                before.
+                            </p>
+
+                            <blockquote>
+                                A mind that is stretched by a new experience can never go back to
+                                its old dimensions
+                            </blockquote>
+
+                            <p>
+                                The rays of the searchlight were kept fixed on the harbour mouth
+                                across the East Pier, where the shock was expected, and men waited
+                                breathless. The wind suddenly shifted to the north-east, and the
+                                remnant of the sea-fog melted in the blast; and then, mirabile
+                                dictu, between the piers, leaping from wave to wave as it rushed at
+                                headlong speed, swept the strange schooner before the blast, with
+                                all sail set, and gained the safety of the harbour.
+                            </p>
+
+                            <figcaption class="post__img-wrapper post__img-wrapper--wide">
+                                <img src="img/article1-wide.jpg" alt="article1" class="post__img" />
+                                <figcaption>
+                                    Photo by
+                                    <a
+                                        href="https://unsplash.com/@averieclaire?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">
+                                        Austin Neil
+                                    </a>
+                                    /
+                                    <a
+                                        href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">
+                                        Unsplash
+                                    </a>
+                                </figcaption>
+                            </figcaption>
+
+                            <h3 id="life-is-short-and-the-world-is-wide">
+                                Life is short and the world is wide
+                            </h3>
+
+                            <ul>
+                                <li>
+                                    The searchlight followed her, and a shudder ran through all who
+                                    saw her, for lashed to the helm was a corpse, with drooping
+                                    head, which swung horribly to and fro at each motion of the
+                                    ship.
+                                </li>
+                                <li>
+                                    No other form could be seen on deck at all. A great awe came on
+                                    all as they realised that the ship, as if by a miracle, had
+                                    found the harbour, unsteered save by the hand of a dead man!
+                                    However, all took place more quickly than it takes to write
+                                    these words.
+                                </li>
+                                <li>
+                                    The schooner paused not, but rushing across the harbour, pitched
+                                    herself on that accumulation of sand and gravel washed by many
+                                    tides and many storms into the south-east corner of the pier
+                                    jutting under the East Cliff, known locally as Tate Hill Pier.
+                                </li>
+                            </ul>
+
+                            <blockquote>
+                                Without new experiences, something inside of us sleeps. The sleeper
+                                must awaken. – Frank Herbert
+                            </blockquote>
+
+                            <p>
+                                There was of course a considerable concussion as the vessel drove up
+                                on the sand heap. Every spar, rope, and stay was strained, and some
+                                of the "top-hammer" came crashing down. But, strangest of all, the
+                                very instant the shore was touched, an immense dog sprang up on deck
+                                from below, as if shot up by the concussion, and running forward,
+                                jumped from the bow on the sand.
+                            </p>
+
+                            <figure class="post__img-wrapper post__img-wrapper--wide">
+                                <img
+                                    src="img/article1-wide-2.jpg"
+                                    alt="article"
+                                    class="post__img" />
+                                <figcaption>
+                                    Photo by
+                                    <a
+                                        href="https://unsplash.com/@averieclaire?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">
+                                        Averie Woodard
+                                    </a>
+                                    /
+                                    <a
+                                        href="https://unsplash.com/?utm_source=ghost&amp;utm_medium=referral&amp;utm_campaign=api-credit">
+                                        Unsplash
+                                    </a>
+                                </figcaption>
+                            </figure>
+
+                            <p>
+                                Making straight for the steep cliff, where the churchyard hangs over
+                                the laneway to the East Pier so steeply that some of the flat
+                                tombstones--"thruff-steans" or "through-stones," as they call them
+                                in the Whitby vernacular--actually project over where the sustaining
+                                cliff has fallen away, it disappeared in the darkness, which seemed
+                                intensified just beyond the focus of the searchlight.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-footer-post">
+                <div class="container">
+                    <div class="post-footer flex">
+                        <div class="post-footer__content">
+                            <div class="post-footer__share-wrapper">
+                                <div class="post-footer__share-title">Share this article:</div>
+                                <div class="post-footer__share-links flex">
+                                    <a href="#">
+                                        <svg>
+                                            <use href="img/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg>
+                                            <use href="img/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-prev-next-post">
+                <div class="container">
+                    <div class="prev-next-post flex">
+                        <article class="post-card js-card post-card--small post-card--left flex">
+                            <a class="post-card__img-wrapper">
+                                <img src="img/article3.webp" alt="article2" />
+                            </a>
+                            <div class="post-card__info-wrapper">
+                                <p>OLDER POST</p>
+                                <h2 class="post-title">
+                                    The mind and body are not separate. what affects one, affects
+                                    the other
+                                </h2>
+                            </div>
+                        </article>
+                        <article class="post-card js-card post-card--small post-card--right flex">
+                            <a class="post-card__img-wrapper">
+                                <img src="img/article4.webp" alt="article2" />
+                            </a>
+                            <div class="post-card__info-wrapper">
+                                <p>NEWER POST</p>
+                                <h2 class="post-title">
+                                    The mind and body are not separate. what affects one, affects
+                                    the other
+                                </h2>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-related-post">
+                <div class="container">
+                    <div class="related-post">
+                        <div class="related-post__title">You might also like</div>
+                        <div class="related-post__wrapper">
+                            <div class="related-post__item flex">
+                                <a class="related-post__img-wrapper">
+                                    <img src="img/related1.jpg" alt="related" />
+                                </a>
+                                <h4>Don't listen to what they say, go see</h4>
+                            </div>
+                            <div class="related-post__item flex">
+                                <a class="related-post__img-wrapper">
+                                    <img src="img/related2.jpg" alt="related" />
+                                </a>
+                                <h4>With age, comes wisdom. With travel, comes understanding</h4>
+                            </div>
+                            <div class="related-post__item flex">
+                                <a class="related-post__img-wrapper">
+                                    <img src="img/related3.jpg" alt="related" />
+                                </a>
+                                <h4>
+                                    Stop worrying about the potholes in the road and enjoy the
+                                    journey
+                                </h4>
+                            </div>
+                            <div class="related-post__item flex">
+                                <a class="related-post__img-wrapper">
+                                    <img src="img/related4.jpg" alt="related" />
+                                </a>
+                                <h4>Fear is only temporary, regrets last forever</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-subcribe">
+                <div class="container">
+                    <div class="subcribe-two-column flex">
+                        <div class="subcribe-column-left flex">
+                            <h2 class="subcribe-heading">
+                                Subscribe to Porto newsletter and stay updated.
+                            </h2>
+                            <p class="subtext">
+                                Don't miss anything. Get all the latest posts delivered straight to
+                                your inbox. It's free!
+                            </p>
+                        </div>
+                        <div class="subcribe-column-right">
+                            <div class="subcribe-form-wrapper">
+                                <form class="subcribe-form">
+                                    <label class="sr-only" for="subcribe_name"></label>
+                                    <input
+                                        autocomplete="true"
+                                        required
+                                        placeholder="Your name"
+                                        name="name"
+                                        id="subcribe_name"
+                                        class="subcribe-form__name"
+                                        type="text" />
+                                    <label class="sr-only" for="subcribe_email"></label>
+                                    <input
+                                        autocomplete="true"
+                                        required
+                                        placeholder="Your email address"
+                                        name="email"
+                                        id="subcribe_email"
+                                        class="subcribe-form__email"
+                                        type="email" />
+                                    <button class="btn btn--black btn--fluid">Subcribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-two-column">
+                    <div class="footer-column-left flex">
+                        <a href="#" class="logo-wrapper footer__logo-wrapper">
+                            <img class="logo" src="" alt="logo" />
+                        </a>
+                        <p class="subtext footer__subtext">
+                            Porto is a premium multipurpose Ghost theme suitable for personal,
+                            professional, magazine, brand blog and newsletter.
+                        </p>
+                        <div class="footer__icon-wrapper flex">
+                            <svg class="footer__icon">
+                                <use href="img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            <svg class="footer__icon">
+                                <use href="img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="footer-column-right">
+                        <div class="footer__link flex">
+                            <span>Features</span>
+                            <a href="#">Style Guide</a>
+                            <a href="#">Tags</a>
+                            <a href="#">Authors</a>
+                            <a href="#">Features</a>
+                            <a href="#">Contact</a>
+                        </div>
+                        <div class="footer__link flex">
+                            <span>Pages</span>
+                            <a href="#">Membership</a>
+                            <a href="#">Sign in</a>
+                            <a href="#">Sign up</a>
+                            <a href="#">Account free</a>
+                            <a href="#">Account paid</a>
+                        </div>
+                        <div class="footer__link flex">
+                            <span>About</span>
+                            <a href="#">Privacy policy</a>
+                            <a href="#">Terms</a>
+                            <a href="#">Contact</a>
+                            <a href="#">404 error</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom flex">
+                    <p class="footer-bottom__trademarks">© Porto 2023. Created by Minh Khải</p>
+                    <a href="#" class="footer-bottom__back-to-top flex">
+                        Back to top
+                        <svg class="footer__icon">
+                            <use href="img/sprite.svg#icon-arrow-up"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="popup" id="popup">
+            <div class="popup__content flex">
+                <svg class="search__icon">
+                    <use href="img/sprite.svg#icon-search"></use>
+                </svg>
+                <input
+                    placeholder="Search posts, tags and authors"
+                    type="text"
+                    class="search__input" />
+                <div class="search__result-wrapper">
+                    <div class="search__item-wrapper">
+                        <h1 class="search-heading">Tags</h1>
+                        <div class="search__item">
+                            <p># Technology</p>
+                        </div>
+                    </div>
+                    <div class="search__item-wrapper">
+                        <h1 class="search-heading">Posts</h1>
+                        <div class="search__item">
+                            <p>New tech innovation for low cost ocean cleanup</p>
+                            <span>
+                                Nearly a year later, in the month of October, London was startled by
+                                a crime of singular ferocity
+                            </span>
+                        </div>
+                        <div class="search__item">
+                            <p>Fear is only temporary, regrets last forever</p>
+                            <span>
+                                I believe we were some minutes in this extraordinary situation; but,
+                                as my strength returned
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

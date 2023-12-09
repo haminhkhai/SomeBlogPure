@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tags</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="header-two-column flex">
+          <div class="header-column-left flex">
+            <a href="index.html">
+              <img src="img/logo-light.svg" alt="logo" class="logo" />
+            </a>
+            <nav class="nav-wrap nav-wrap--left-side flex">
+              <ul class="nav">
+                <li class="nav__item">
+                  <a href="tags.html" class="nav__link">Tags</a>
+                </li>
+                <li class="nav__item">
+                  <a href="authors.html" class="nav__link">Authors</a>
+                </li>
+                <li class="nav__item">
+                  <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-column-right flex">
+            <nav class="nav-wrap flex">
+              <ul class="nav nav--right-side">
+                <li class="nav__item">
+                  <svg id="searchBtn" class="nav__icon">
+                    <use href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </li>
+                <li class="nav__item">
+                  <svg onclick="toggleTheme('toggle')" id="toggle_theme_btn" class="nav__icon">
+                    <use href=""></use>
+                  </svg>
+                </li>
+                <li class="nav__item nav__sign-in">
+                  <a href="#" class="nav__link">Sign in</a>
+                </li>
+                <li class="nav__item nav__subcribe">
+                  <button class="btn">Become a member</button>
+                </li>
+                <li class="nav__item nav__sub-menu">
+                  <input type="checkbox" class="nav__checkbox" id="nav-toggle" />
+                  <label for="nav-toggle" class="nav__button prevent-select">
+                    <span class="nav__toggle-icon">&nbsp;</span>
+                  </label>
+                  <div class="nav__sub-menu-background">
+                    <nav class="sub-menu">
+                      <ul class="sub-menu__nav prevent-select">
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link">Tags</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link">Author</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link">Contact</a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <nav class="sub-menu flex">
+                      <ul class="sub-menu__nav sub-menu__nav--center flex prevent-select">
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link">Sign in</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <button class="btn">Become a member</button>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-tag">
+        <div class="container">
+          <div class="tag">
+            <h1 class="tag__title">Tags</h1>
+            <div class="tag__wrapper">
+              <div class="tag__item js-card flex">
+                <a href="tag.html" class="tag__img-wrapper">
+                  <img src="img/tags/lifestyle.webp" alt="tags" />
+                </a>
+                <h2>Lifestyle</h2>
+                <span>10 posts</span>
+              </div>
+              <div class="tag__item js-card flex">
+                <a href="tag.html" class="tag__img-wrapper">
+                  <img src="img/tags/technology.webp" alt="tags" />
+                </a>
+                <h2>Technology</h2>
+                <span>12 posts</span>
+              </div>
+              <div class="tag__item js-card flex">
+                <a href="tag.html" class="tag__img-wrapper">
+                  <img src="img/tags/food.webp" alt="tags" />
+                </a>
+                <h2>Food</h2>
+                <span>33 posts</span>
+              </div>
+              <div class="tag__item js-card flex">
+                <a href="tag.html" class="tag__img-wrapper">
+                  <img src="img/tags/inspiration.webp" alt="tags" />
+                </a>
+                <h2>Inspiration</h2>
+                <span>20 posts</span>
+              </div>
+              <div class="tag__item js-card flex">
+                <a href="tag.html" class="tag__img-wrapper">
+                  <img src="img/tags/nature.webp" alt="tags" />
+                </a>
+                <h2>Nature</h2>
+                <span>21 posts</span>
+              </div>
+              <div class="tag__item js-card flex">
+                <a href="tag.html" class="tag__img-wrapper">
+                  <img src="img/tags/travel.webp" alt="tags" />
+                </a>
+                <h2>Travel</h2>
+                <span>15 posts</span>
+              </div>
+              <div class="tag__item js-card flex">
+                <a href="tag.html" class="tag__img-wrapper">
+                  <img src="img/tags/health.webp" alt="tags" />
+                </a>
+                <h2>Health</h2>
+                <span>15 posts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-subcribe">
+        <div class="container">
+          <div class="subcribe-two-column flex">
+            <div class="subcribe-column-left flex">
+              <h2 class="subcribe-heading">Subscribe to Porto newsletter and stay updated.</h2>
+              <p class="subtext">
+                Don't miss anything. Get all the latest posts delivered straight to your inbox. It's
+                free!
+              </p>
+            </div>
+            <div class="subcribe-column-right">
+              <div class="subcribe-form-wrapper">
+                <form class="subcribe-form">
+                  <label class="sr-only" for="subcribe_name"></label>
+                  <input
+                    autocomplete="true"
+                    required
+                    placeholder="Your name"
+                    name="name"
+                    id="subcribe_name"
+                    class="subcribe-form__name"
+                    type="text" />
+                  <label class="sr-only" for="subcribe_email"></label>
+                  <input
+                    autocomplete="true"
+                    required
+                    placeholder="Your email address"
+                    name="email"
+                    id="subcribe_email"
+                    class="subcribe-form__email"
+                    type="email" />
+                  <button class="btn btn--black btn--fluid">Subcribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-two-column">
+          <div class="footer-column-left flex">
+            <a href="#" class="logo-wrapper footer__logo-wrapper">
+              <img class="logo" src="" alt="logo" />
+            </a>
+            <p class="subtext footer__subtext">
+              Porto is a premium multipurpose Ghost theme suitable for personal, professional,
+              magazine, brand blog and newsletter.
+            </p>
+            <div class="footer__icon-wrapper flex">
+              <svg class="footer__icon">
+                <use href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+              <svg class="footer__icon">
+                <use href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="footer-column-right">
+            <div class="footer__link flex">
+              <span>Features</span>
+              <a href="#">Style Guide</a>
+              <a href="#">Tags</a>
+              <a href="#">Authors</a>
+              <a href="#">Features</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="footer__link flex">
+              <span>Pages</span>
+              <a href="#">Membership</a>
+              <a href="#">Sign in</a>
+              <a href="#">Sign up</a>
+              <a href="#">Account free</a>
+              <a href="#">Account paid</a>
+            </div>
+            <div class="footer__link flex">
+              <span>About</span>
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms</a>
+              <a href="#">Contact</a>
+              <a href="#">404 error</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom flex">
+          <p class="footer-bottom__trademarks">© Porto 2023. Created by Minh Khải</p>
+          <a href="#" class="footer-bottom__back-to-top flex">
+            Back to top
+            <svg class="footer__icon">
+              <use href="img/sprite.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content flex">
+        <svg class="search__icon">
+          <use href="img/sprite.svg#icon-search"></use>
+        </svg>
+        <input placeholder="Search posts, tags and authors" type="text" class="search__input" />
+        <div class="search__result-wrapper">
+          <div class="search__item-wrapper">
+            <h1 class="search-heading">Tags</h1>
+            <div class="search__item">
+              <p># Technology</p>
+            </div>
+          </div>
+          <div class="search__item-wrapper">
+            <h1 class="search-heading">Posts</h1>
+            <div class="search__item">
+              <p>New tech innovation for low cost ocean cleanup</p>
+              <span>
+                Nearly a year later, in the month of October, London was startled by a crime of
+                singular ferocity
+              </span>
+            </div>
+            <div class="search__item">
+              <p>Fear is only temporary, regrets last forever</p>
+              <span>
+                I believe we were some minutes in this extraordinary situation; but, as my strength
+                returned
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

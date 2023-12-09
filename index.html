@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Some Blog</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="header-two-column flex">
+          <div class="header-column-left flex">
+            <a href="index.html">
+              <img src="img/logo-light.svg" alt="logo" class="logo" />
+            </a>
+            <nav class="nav-wrap nav-wrap--left-side flex">
+              <ul class="nav">
+                <li class="nav__item">
+                  <a href="tags.html" class="nav__link">Tags</a>
+                </li>
+                <li class="nav__item">
+                  <a href="authors.html" class="nav__link">Authors</a>
+                </li>
+                <li class="nav__item">
+                  <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-column-right flex">
+            <nav class="nav-wrap flex">
+              <ul class="nav nav--right-side">
+                <li class="nav__item">
+                  <svg id="searchBtn" class="nav__icon">
+                    <use href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </li>
+                <li class="nav__item">
+                  <svg onclick="toggleTheme('toggle')" id="toggle_theme_btn" class="nav__icon">
+                    <use href=""></use>
+                  </svg>
+                </li>
+                <li class="nav__item nav__sign-in">
+                  <a href="#" class="nav__link">Sign in</a>
+                </li>
+                <li class="nav__item nav__subcribe">
+                  <button class="btn">Become a member</button>
+                </li>
+                <li class="nav__item nav__sub-menu">
+                  <input type="checkbox" class="nav__checkbox" id="nav-toggle" />
+                  <label for="nav-toggle" class="nav__button prevent-select">
+                    <span class="nav__toggle-icon">&nbsp;</span>
+                  </label>
+                  <div class="nav__sub-menu-background">
+                    <nav class="sub-menu">
+                      <ul class="sub-menu__nav prevent-select">
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link">Tags</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link">Author</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link">Contact</a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <nav class="sub-menu flex">
+                      <ul class="sub-menu__nav sub-menu__nav--center flex prevent-select">
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link">Sign in</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <button class="btn">Become a member</button>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero-two-column">
+            <div class="hero-column-left">
+              <h1 class="heading-large intro-title">
+                Hello 👋, we are Porto, exploring
+                <span>fashion</span>, <span>lifestyle</span> and <span>health</span>.
+              </h1>
+              <div class="intro-description">
+                Introducing a modern and sleek theme for Ghost. Perfect for
+                <b>magazine, newsletter, professional and personal blog</b>
+                publishing.
+              </div>
+              <div class="hero-email-supcription">
+                <form class="hero-subcription-form flex">
+                  <label for="hero_form_email" class="sr-only"></label>
+                  <input
+                    placeholder="Your email address"
+                    autocomplete="true"
+                    id="hero_form_email"
+                    class="email"
+                    name="email"
+                    type="email" />
+                  <button class="btn">
+                    <span>Subcribe</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="hero-column-right">
+              <div class="cover-image-wrapper">
+                <img src="img/hero-right.jpg" alt="cover-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-featured">
+        <div class="container">
+          <div>
+            <h2 class="section-title">Featured posts</h2>
+          </div>
+          <div class="featured-two-column flex">
+            <div class="featured-column-left">
+              <article id="article_main" class="post-card js-card flex">
+                <a href="post.html" class="post-card__img-wrapper">
+                  <img src="img/article1.webp" alt="article" />
+                </a>
+                <div class="post-card__info-wrapper">
+                  <div class="post-card__tag-list flex">
+                    <a class="post-tag post-tag--travel" href="#">Travel</a>
+                  </div>
+                  <h2 class="post-title">
+                    <a href="post.html">Never let your memories be greater than your dreams</a>
+                  </h2>
+                  <div class="post-excerpt">
+                    Before long the searchlight discovered some distance away a schooner with all
+                    sails set, apparently the same vessel which had been noticed earlier in the
+                    evening. The wind had by this time backed to the east, and there was a shudder
+                    amongst the watchers on
+                  </div>
+                  <div class="post-card__meta flex">
+                    <div class="meta-authors flex">
+                      <a class="meta-authors__img-wrapper">
+                        <img src="img/user-2.jpg" alt="Friend 1" class="meta-authors__img" />
+                      </a>
+                      <a class="meta-authors__img-wrapper">
+                        <img src="img/user-4.jpg" alt="Friend 2" class="meta-authors__img" />
+                      </a>
+                    </div>
+                    <div class="meta-time flex">
+                      <svg class="meta-time__icon">
+                        <use href="img/sprite.svg#icon-clock"></use>
+                      </svg>
+                      <span>3 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="featured-column-right">
+              <div class="small-posts-wrap flex">
+                <article class="post-card js-card post-card--small flex">
+                  <a class="post-card__img-wrapper">
+                    <img src="img/article2.webp" alt="article2" />
+                  </a>
+                  <div class="post-card__info-wrapper">
+                    <div class="post-card__tag-list">
+                      <a class="post-tag post-tag--lifestyle" href="#"> Lifestyle </a>
+                    </div>
+                    <h2 class="post-title">
+                      <a href="post.html">Self-observation is the first step of inner unfolding</a>
+                    </h2>
+                  </div>
+                </article>
+
+                <article class="post-card js-card post-card--small flex">
+                  <a class="post-card__img-wrapper">
+                    <img src="img/article3.webp" alt="article2" />
+                  </a>
+                  <div class="post-card__info-wrapper">
+                    <div class="post-card__tag-list">
+                      <a class="post-tag post-tag--health" href="#"> Health </a>
+                    </div>
+                    <h2 class="post-title">
+                      <a href="post.html"
+                        >The mind and body are not separate. what affects one, affects the other</a
+                      >
+                    </h2>
+                  </div>
+                </article>
+
+                <article class="post-card js-card post-card--small flex">
+                  <a class="post-card__img-wrapper">
+                    <img src="img/article4.webp" alt="article2" />
+                  </a>
+                  <div class="post-card__info-wrapper">
+                    <div class="post-card__tag-list">
+                      <a class="post-tag post-tag--tech" href="#"> Technology </a>
+                    </div>
+                    <h2 class="post-title">
+                      <a href="post.html">New tech innovation for low cost ocean cleanup</a>
+                    </h2>
+                  </div>
+                </article>
+
+                <article class="post-card js-card post-card--small flex">
+                  <a class="post-card__img-wrapper">
+                    <img src="img/article5.webp" alt="article2" />
+                  </a>
+                  <div class="post-card__info-wrapper">
+                    <div class="post-card__tag-list">
+                      <a class="post-tag post-tag--health" href="#"> Technology </a>
+                    </div>
+                    <h2 class="post-title">
+                      <a href="post.html"
+                        >All the money in the world can't buy you back good health</a
+                      >
+                    </h2>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-popular-tags">
+        <div class="container">
+          <h2 class="section-title">Popular Tags</h2>
+          <div class="popular-tags-wrapper flex">
+            <div class="popular-tag flex">
+              <div class="popular-tag__img-wrapper">
+                <img src="img/tags/inspiration.webp" alt="inspiration" />
+              </div>
+              <div class="popular-tag__info">
+                <a href="tag.html" class="popular-tag__link">Inspiration</a>
+                <div class="popular-tag__post-count">6 posts</div>
+              </div>
+            </div>
+
+            <div class="popular-tags-wrapper flex">
+              <div class="popular-tag flex">
+                <div class="popular-tag__img-wrapper">
+                  <img src="img/tags/nature.webp" alt="inspiration" />
+                </div>
+                <div class="popular-tag__info">
+                  <a href="tag.html" class="popular-tag__link">Nature</a>
+                  <div class="popular-tag__post-count">16 posts</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-tags-wrapper flex">
+              <div class="popular-tag flex">
+                <div class="popular-tag__img-wrapper">
+                  <img src="img/tags/lifestyle.webp" alt="Lifestyle" />
+                </div>
+                <div class="popular-tag__info">
+                  <a href="tag.html" class="popular-tag__link">Lifestyle</a>
+                  <div class="popular-tag__post-count">8 posts</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-tags-wrapper flex">
+              <div class="popular-tag flex">
+                <div class="popular-tag__img-wrapper">
+                  <img src="img/tags/inspiration.webp" alt="inspiration" />
+                </div>
+                <div class="popular-tag__info">
+                  <a href="tag.html" class="popular-tag__link">Inspiration</a>
+                  <div class="popular-tag__post-count">6 posts</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-tags-wrapper flex">
+              <div class="popular-tag flex">
+                <div class="popular-tag__img-wrapper">
+                  <img src="img/tags/health.webp" alt="Health" />
+                </div>
+                <div class="popular-tag__info">
+                  <a href="tag.html" class="popular-tag__link">Health</a>
+                  <div class="popular-tag__post-count">6 posts</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-tags-wrapper flex">
+              <div class="popular-tag flex">
+                <div class="popular-tag__img-wrapper">
+                  <img src="img/tags/travel.webp" alt="Travel" />
+                </div>
+                <div class="popular-tag__info">
+                  <a href="tag.html" class="popular-tag__link">Travel</a>
+                  <div class="popular-tag__post-count">22 posts</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-tags-wrapper flex">
+              <div class="popular-tag flex">
+                <div class="popular-tag__img-wrapper">
+                  <img src="img/tags/food.webp" alt="Food" />
+                </div>
+                <div class="popular-tag__info">
+                  <a href="tag.html" class="popular-tag__link">Food</a>
+                  <div class="popular-tag__post-count">16 posts</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-tags-wrapper flex">
+              <div class="popular-tag flex">
+                <div class="popular-tag__img-wrapper">
+                  <img src="img/tags/technology.webp" alt="Technology" />
+                </div>
+                <div class="popular-tag__info">
+                  <a href="tag.html" class="popular-tag__link">Technology</a>
+                  <div class="popular-tag__post-count">6 posts</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="popular-tags-wrapper flex">
+              <div class="popular-tag flex">
+                <div class="popular-tag__info popular-tag__info--all-tags flex">
+                  <a href="tags.html" class="popular-tag__link">See all tags</a>
+                  <svg>
+                    <use href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-all-posts">
+        <div class="container">
+          <div class="all-three-column">
+            <article id="article_main" class="post-card post-card--mid js-card flex">
+              <a class="post-card__img-wrapper">
+                <img src="img/article6.webp" alt="article" />
+              </a>
+              <div class="post-card__info-wrapper">
+                <div class="post-card__tag-list flex">
+                  <a class="post-tag post-tag--nature" href="#">Nature</a>
+                </div>
+                <h2 class="post-title">
+                  <a href="post.html">Autumn is a second spring when every leaf is a flower</a>
+                </h2>
+                <div class="post-excerpt">
+                  She then expatiated very warmly upon the advantages I should reap from her plan;
+                  talked in a high style of my future grandeur; assured me how heartily I should
+                  despise almost every body
+                </div>
+                <div class="post-card__meta flex">
+                  <div class="meta-authors flex">
+                    <a class="meta-authors__img-wrapper">
+                      <img src="img/user-5.jpg" alt="Friend 2" class="meta-authors__img" />
+                    </a>
+                  </div>
+                  <div class="meta-time flex">
+                    <svg class="meta-time__icon">
+                      <use href="img/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <span>5 min read</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article id="article_main" class="post-card post-card--mid js-card flex">
+              <a class="post-card__img-wrapper">
+                <img src="img/article1.webp" alt="article" />
+              </a>
+              <div class="post-card__info-wrapper">
+                <div class="post-card__tag-list flex">
+                  <a class="post-tag post-tag--travel" href="#">Travel</a>
+                </div>
+                <h2 class="post-title">
+                  <a href="post.html">Never let your memories be greater than your dreams</a>
+                </h2>
+                <div class="post-excerpt">
+                  Before long the searchlight discovered some distance away a schooner with all
+                  sails set, apparently the same vessel which had been noticed earlier in the
+                  evening. The wind had by this time backed to the east, and there was a shudder
+                  amongst the watchers on
+                </div>
+                <div class="post-card__meta flex">
+                  <div class="meta-authors flex">
+                    <a class="meta-authors__img-wrapper">
+                      <img src="img/user-2.jpg" alt="Friend 1" class="meta-authors__img" />
+                    </a>
+                    <a class="meta-authors__img-wrapper">
+                      <img src="img/user-4.jpg" alt="Friend 2" class="meta-authors__img" />
+                    </a>
+                  </div>
+                  <div class="meta-time flex">
+                    <svg class="meta-time__icon">
+                      <use href="img/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <span>3 min read</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article id="article_main" class="post-card post-card--mid js-card flex">
+              <a class="post-card__img-wrapper">
+                <img src="img/article2.webp" alt="article" />
+              </a>
+              <div class="post-card__info-wrapper">
+                <div class="post-card__tag-list flex">
+                  <a class="post-tag post-tag--food" href="#">Food</a>
+                </div>
+                <h2 class="post-title">
+                  <a href="post.html">
+                    Dramatically improve your cooking using just your imagination
+                  </a>
+                </h2>
+                <div class="post-excerpt">
+                  You cannot too assiduously attend to Madame Duval herself; but I would wish you to
+                  mix as little as possible with her associates, who are not likely to be among
+                  those whose acquaintance would
+                </div>
+                <div class="post-card__meta flex">
+                  <div class="meta-authors flex">
+                    <a class="meta-authors__img-wrapper">
+                      <img src="img/user-2.jpg" alt="Friend 1" class="meta-authors__img" />
+                    </a>
+                    <a class="meta-authors__img-wrapper">
+                      <img src="img/user-4.jpg" alt="Friend 2" class="meta-authors__img" />
+                    </a>
+                  </div>
+                  <div class="meta-time flex">
+                    <svg class="meta-time__icon">
+                      <use href="img/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <span>3 min read</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article id="article_main" class="post-card post-card--mid js-card flex">
+              <a class="post-card__img-wrapper">
+                <img src="img/article3.webp" alt="article" />
+              </a>
+              <div class="post-card__info-wrapper">
+                <div class="post-card__tag-list flex">
+                  <a class="post-tag post-tag--nature" href="#">Nature</a>
+                </div>
+                <h2 class="post-title">
+                  <a href="post.html">
+                  Autumn is a second spring when every leaf is a flower</a></h2>
+                <div class="post-excerpt">
+                  She then expatiated very warmly upon the advantages I should reap from her plan;
+                  talked in a high style of my future grandeur; assured me how heartily I should
+                  despise almost every body
+                </div>
+                <div class="post-card__meta flex">
+                  <div class="meta-authors flex">
+                    <a class="meta-authors__img-wrapper">
+                      <img src="img/user-5.jpg" alt="Friend 2" class="meta-authors__img" />
+                    </a>
+                  </div>
+                  <div class="meta-time flex">
+                    <svg class="meta-time__icon">
+                      <use href="img/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <span>5 min read</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article id="article_main" class="post-card post-card--mid js-card flex">
+              <a class="post-card__img-wrapper">
+                <img src="img/article5.webp" alt="article" />
+              </a>
+              <div class="post-card__info-wrapper">
+                <div class="post-card__tag-list flex">
+                  <a class="post-tag post-tag--travel" href="#">Travel</a>
+                </div>
+                <h2 class="post-title">
+                  <a href="post.html">
+                  Never let your memories be greater than your dreams</a></h2>
+                <div class="post-excerpt">
+                  Before long the searchlight discovered some distance away a schooner with all
+                  sails set, apparently the same vessel which had been noticed earlier in the
+                  evening. The wind had by this time backed to the east, and there was a shudder
+                  amongst the watchers on
+                </div>
+                <div class="post-card__meta flex">
+                  <div class="meta-authors flex">
+                    <a class="meta-authors__img-wrapper">
+                      <img src="img/user-2.jpg" alt="Friend 1" class="meta-authors__img" />
+                    </a>
+                    <a class="meta-authors__img-wrapper">
+                      <img src="img/user-4.jpg" alt="Friend 2" class="meta-authors__img" />
+                    </a>
+                  </div>
+                  <div class="meta-time flex">
+                    <svg class="meta-time__icon">
+                      <use href="img/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <span>3 min read</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article id="article_main" class="post-card post-card--mid js-card flex">
+              <a class="post-card__img-wrapper">
+                <img src="img/article4.webp" alt="article" />
+              </a>
+              <div class="post-card__info-wrapper">
+                <div class="post-card__tag-list flex">
+                  <a class="post-tag post-tag--food" href="#">Food</a>
+                </div>
+                <h2 class="post-title">
+                  <a href="post.html">
+                  Dramatically improve your cooking using just your imagination</a>
+                </h2>
+                <div class="post-excerpt">
+                  You cannot too assiduously attend to Madame Duval herself; but I would wish you to
+                  mix as little as possible with her associates, who are not likely to be among
+                  those whose acquaintance would
+                </div>
+                <div class="post-card__meta flex">
+                  <div class="meta-authors flex">
+                    <a class="meta-authors__img-wrapper">
+                      <img src="img/user-2.jpg" alt="Friend 1" class="meta-authors__img" />
+                    </a>
+                    <a class="meta-authors__img-wrapper">
+                      <img src="img/user-4.jpg" alt="Friend 2" class="meta-authors__img" />
+                    </a>
+                  </div>
+                  <div class="meta-time flex">
+                    <svg class="meta-time__icon">
+                      <use href="img/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <span>3 min read</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="margin-top-md">
+            <button class="btn center-align">
+              <span>Load more</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-subcribe">
+        <div class="container">
+          <div class="subcribe-two-column flex">
+            <div class="subcribe-column-left flex">
+              <h2 class="subcribe-heading">Subscribe to Porto newsletter and stay updated.</h2>
+              <p class="subtext">
+                Don't miss anything. Get all the latest posts delivered straight to your inbox. It's
+                free!
+              </p>
+            </div>
+            <div class="subcribe-column-right">
+              <div class="subcribe-form-wrapper">
+                <form class="subcribe-form">
+                  <label class="sr-only" for="subcribe_name"></label>
+                  <input
+                    autocomplete="true"
+                    required
+                    placeholder="Your name"
+                    name="name"
+                    id="subcribe_name"
+                    class="subcribe-form__name"
+                    type="text" />
+                  <label class="sr-only" for="subcribe_email"></label>
+                  <input
+                    autocomplete="true"
+                    required
+                    placeholder="Your email address"
+                    name="email"
+                    id="subcribe_email"
+                    class="subcribe-form__email"
+                    type="email" />
+                  <button class="btn btn--black btn--fluid">Subcribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-two-column">
+          <div class="footer-column-left flex">
+            <a href="#" class="logo-wrapper footer__logo-wrapper">
+              <img class="logo" src="" alt="logo" />
+            </a>
+            <p class="subtext footer__subtext">
+              Porto is a premium multipurpose Ghost theme suitable for personal, professional,
+              magazine, brand blog and newsletter.
+            </p>
+            <div class="footer__icon-wrapper flex">
+              <svg class="footer__icon">
+                <use href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+              <svg class="footer__icon">
+                <use href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="footer-column-right">
+            <div class="footer__link flex">
+              <span>Features</span>
+              <a href="#">Style Guide</a>
+              <a href="#">Tags</a>
+              <a href="#">Authors</a>
+              <a href="#">Features</a>
+              <a href="#">Contact</a>
+            </div>
+            <div class="footer__link flex">
+              <span>Pages</span>
+              <a href="#">Membership</a>
+              <a href="#">Sign in</a>
+              <a href="#">Sign up</a>
+              <a href="#">Account free</a>
+              <a href="#">Account paid</a>
+            </div>
+            <div class="footer__link flex">
+              <span>About</span>
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms</a>
+              <a href="#">Contact</a>
+              <a href="#">404 error</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom flex">
+          <p class="footer-bottom__trademarks">© Porto 2023. Created by Minh Khải</p>
+          <a href="#" class="footer-bottom__back-to-top flex">
+            Back to top
+            <svg class="footer__icon">
+              <use href="img/sprite.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content flex">
+        <svg class="search__icon">
+          <use href="img/sprite.svg#icon-search"></use>
+        </svg>
+        <input placeholder="Search posts, tags and authors" type="text" class="search__input" />
+        <div class="search__result-wrapper">
+          <div class="search__item-wrapper">
+            <h1 class="search-heading">Tags</h1>
+            <div class="search__item">
+              <p># Technology</p>
+            </div>
+          </div>
+          <div class="search__item-wrapper">
+            <h1 class="search-heading">Posts</h1>
+            <div class="search__item">
+              <p>New tech innovation for low cost ocean cleanup</p>
+              <span>
+                Nearly a year later, in the month of October, London was startled by a crime of
+                singular ferocity
+              </span>
+            </div>
+            <div class="search__item">
+              <p>Fear is only temporary, regrets last forever</p>
+              <span>
+                I believe we were some minutes in this extraordinary situation; but, as my strength
+                returned
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

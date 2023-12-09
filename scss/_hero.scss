@@ -1,0 +1,102 @@
+.hero-two-column {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+}
+
+.hero-column-left {
+    flex: 1 0 50%;
+    max-width: 90rem;
+}
+
+.hero-column-right {
+    flex: 1;
+    align-self: flex-start;
+    position: relative;
+    min-width: 30rem;
+}
+
+.intro-title {
+    margin-top: 0;
+
+    & span {
+        background-image: $gradient-primary;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @include respond(phone) {
+        font-size: 4rem;
+    }
+}
+
+.intro-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.hero-email-supcription {
+    position: relative;
+    margin-top: 3rem;
+    max-width: 52rem;
+
+    & .hero-subcription-form {
+        position: relative;
+        align-items: center;
+        padding: .75rem;
+        z-index: 9;
+
+        & .email {
+            flex: 1 1 150px;
+            margin-bottom: 0;
+            margin-right: 0.5rem;
+            background: 0 0;
+            border: 0;
+
+            &:focus {
+                border: 0;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+    //the gradient element
+    &::before {
+        content: '';
+        position: absolute;
+        border-radius: 99px;
+        //the distance to the parent element from the positioned (need to be positioned) before pseudo element
+        //you need this for before pseudo element cover parent div
+        inset: 0;
+        background-image: $gradient-primary;
+    }
+
+    //the background that overlap beforce pseudo 
+    //element to make it look like gradient border
+    &::after {
+        content: '';
+        position: absolute;
+        border-radius: 99px;
+        inset: 2px;
+        background-color: var(--color-primary-light);
+    }
+}
+
+.cover-image-wrapper {
+    
+    img {
+        position: relative;
+        z-index: 1;
+        aspect-ratio: 4/5;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 1.6rem;
+    }
+}

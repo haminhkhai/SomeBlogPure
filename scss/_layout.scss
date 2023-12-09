@@ -1,0 +1,26 @@
+.container {
+    max-width: 1392px;
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include respond(phone-small) {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+main {
+    display: block;
+    padding: 0 0.5rem 3rem 0.5rem;
+}
+
+section {
+    margin-bottom: 7rem;
+}
+
+.section-footer-post {
+    margin-bottom: 12rem;
+}

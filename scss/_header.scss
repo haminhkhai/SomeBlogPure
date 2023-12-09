@@ -1,0 +1,214 @@
+.header {
+    margin: 1.6rem 0 6.4rem 0;
+    z-index: 15;
+    padding: 2rem 1rem;
+    position: sticky;
+    width: 100%;
+
+    @include respond(phone-large) {
+        padding-right: 0;
+    }
+
+    &--scroll {
+        background-color: rgba(var(--color-background-header-rgb), .7);
+        backdrop-filter: blur(20px);
+        box-shadow: $shadow;
+        left: 0;
+        top: 0;
+        z-index: 10;
+    }
+
+    & .container {
+        height: 100%;
+    }
+}
+
+.header-two-column {
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0.5rem 0;
+}
+
+.nav-wrap {
+    flex: 1;
+    align-items: center;
+
+    &--left-side {
+        @include respond(phone-large) {
+            display: none;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    margin-left: 4rem;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: start;
+
+    &__item:not(:first-child) {
+        margin-left: 2rem;
+        @include respond(phone-large) {
+            margin-left: 3rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--color-text);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__icon {
+        margin-top: 0.6rem;
+        width: 2rem;
+        height: 2rem;
+        fill: var(--color-text);
+
+        &:hover {
+            cursor: pointer;
+            fill: var(--color-gradient);
+        }
+    }
+
+    &--right-side {
+        margin: 0 1rem 0 0;
+    }
+
+    &__sign-in,
+    &__subcribe {
+        @include respond(phone-large) {
+            display: none;
+        }
+    }
+
+    &__sub-menu {
+        display: none;
+        @include respond(phone-large) {
+            display: inline;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        height: 5rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    &__toggle-icon {
+        position: relative;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+
+        &,
+        &::before,
+        &::after {
+            width: 5rem;
+            height: 3px;
+            background-color: var(--color-text);
+            display: inline-block;
+            border-radius: 3rem;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            transition: all 0.2s;
+        }
+
+        &::before {
+            top: -1.5rem;
+        }
+
+        &::after {
+            top: 1.5rem;
+        }
+    }
+
+    &__sub-menu-background {
+        position: absolute;
+        top: 10rem;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 10rem);
+        background-color: var(--color-primary);
+        z-index: 100;
+        display: none;
+    }
+
+    //functionality
+
+    &__button:hover &__toggle-icon::before {
+        top: -1.2rem;
+    }
+
+    &__button:hover &__toggle-icon::after {
+        top: 1.2rem;
+    }
+
+    &__checkbox:checked + &__button &__toggle-icon {
+        background-color: transparent;
+        transform: rotate(90deg);
+    }
+
+    &__checkbox:checked + &__button &__toggle-icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__toggle-icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+    &__checkbox:checked ~ &__sub-menu-background {
+        display: block;
+    }
+}
+
+.sub-menu {
+    border-top: 1px solid var(--color-primary-light-2);
+    padding: 1.5rem;
+
+    &__nav {
+        list-style: none;
+        width: 100%;
+
+        &--center {
+            justify-content: center;
+            gap: 2rem;
+        }
+    }
+
+    &__item {
+    }
+
+    &__item a {
+        font-size: 2.5rem;
+        font-weight: 600;
+        display: block;
+        height: 5rem;
+        line-height: 5rem;
+        text-decoration: none;
+        color: var(--color-text);
+        border-radius: 1.6rem;
+        padding: 0rem 1rem;
+
+        &:hover {
+            background-color: var(--color-primary-light);
+        }
+    }
+}

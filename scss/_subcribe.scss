@@ -1,0 +1,104 @@
+.subcribe-two-column {
+    padding: 6rem;
+    gap: 8rem;
+    background-image: $gradient-primary;
+    border-radius: 1.6rem;
+
+    @include respond(tab-port) {
+        gap: 3rem;
+    }
+
+    @include respond(phone-large) {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    @include respond(phone) {
+        padding: 2rem;
+        gap: 2rem;
+    }
+}
+
+.subcribe-column-left {
+    flex: 1 1 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+    @include respond(phone-large) {
+        text-align: center;
+        padding: 3rem 10rem;
+    }
+
+    @include respond(phone) {
+        padding: 3rem 3rem;
+    }
+
+    @include respond(phone-small) {
+        padding: 3rem 0rem;
+    }
+}
+
+.subcribe-column-right {
+    flex: 1;
+}
+
+.subcribe-form-wrapper {
+    min-width: 25rem;
+    background-color: rgba($color: var(--color-text), $alpha: .3);
+    padding: 3rem;
+    border-radius: 1.6rem;
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid rgba($color: var(--color-text), $alpha: .6);
+
+    @include respond(tab-port) {
+        width: 90%;
+    }
+
+    @include respond(phone-large) {
+        width: 70%;
+        padding: 1.5rem;
+    }
+
+    @include respond(phone-small) {
+        width: 100%;
+        padding: 0rem;
+    }
+
+    & .subcribe-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__name {
+            font-size: 1.7rem;
+            background-color: var(--color-text);
+            color: var(--color-primary);
+            border: 0;
+            margin-bottom: 2rem;
+
+            @include respond(phone-small) {
+                width: 95%;
+            }
+        }
+    
+        &__email {
+            font-size: 1.7rem;
+            background-color: var(--color-text);
+            color: var(--color-primary);
+            border: 0;
+            margin-bottom: 2rem;
+
+            @include respond(phone-small) {
+                width: 95%;
+            }
+        }
+    }
+}
+
+
+
